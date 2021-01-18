@@ -28,6 +28,7 @@
         <activity
             android:name=".Search"
             android:screenOrientation="landscape" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

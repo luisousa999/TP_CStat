@@ -12,15 +12,16 @@
         android:layout_width="221dp"
         android:layout_height="42dp"
 
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="68dp"
 
+        android:fontFamily="@font/catamaran_black"
         android:text="Main Menu"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#FF9800"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.742"
+        app:layout_constraintHorizontal_bias="0.915"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,14 +31,15 @@
         android:layout_height="47dp"
         android:layout_marginTop="56dp"
 
+        android:fontFamily="@font/catamaran_black"
         android:text="News"
         android:textAllCaps="true"
         android:textStyle="bold"
-        app:backgroundTint="#FF9800"
 
+        app:backgroundTint="#FF9800"
         app:layout_constraintBottom_toTopOf="@+id/button_Search"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_MainMenu" />
 
@@ -47,14 +49,15 @@
         android:layout_height="47dp"
         android:layout_marginTop="30dp"
 
+        android:fontFamily="@font/catamaran_black"
         android:text="Search"
         android:textAllCaps="true"
         android:textStyle="bold"
-        app:backgroundTint="#FF9800"
 
+        app:backgroundTint="#FF9800"
         app:layout_constraintBottom_toTopOf="@+id/button_Pro"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_News" />
 
@@ -62,17 +65,32 @@
         android:id="@+id/button_Pro"
         android:layout_width="114dp"
         android:layout_height="47dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
 
+        android:fontFamily="@font/catamaran_black"
         android:text="Pro"
         android:textAllCaps="true"
         android:textStyle="bold"
+
+
         app:backgroundTint="#FF9800"
-
-
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_Search" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/catamaran_black"
+        android:text="Trabalho realizado por: Luis Sousa e simplicio"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

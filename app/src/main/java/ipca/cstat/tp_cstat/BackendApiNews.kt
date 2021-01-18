@@ -18,8 +18,7 @@ class BackendApiNews {
         suspend fun getLatestNews( ) : String = suspendCoroutine{
             var result = ""
             try {
-                //https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.hltv.org%2Frss%2Fnews
-                    //https://www.hltv.org/rss/news
+                //https://www.hltv.org/rss/news
                 val urlc: HttpURLConnection = URL("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.hltv.org%2Frss%2Fnews").openConnection() as HttpURLConnection
                 urlc.setRequestProperty("User-Agent", "Test")
                 urlc.setRequestProperty("Connection", "close")
