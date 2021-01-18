@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_menu"
+    tools:context=".MainMenu">
+
+    <TextView
+        android:id="@+id/textView_MainMenu"
+        android:layout_width="221dp"
+        android:layout_height="42dp"
+
+        android:layout_marginTop="64dp"
+
+        android:text="Main Menu"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.742"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_News"
+        android:layout_width="114dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="56dp"
+
+        android:text="News"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:backgroundTint="#FF9800"
+
+        app:layout_constraintBottom_toTopOf="@+id/button_Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_MainMenu" />
+
+    <Button
+        android:id="@+id/button_Search"
+        android:layout_width="114dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+
+        android:text="Search"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:backgroundTint="#FF9800"
+
+        app:layout_constraintBottom_toTopOf="@+id/button_Pro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_News" />
+
+    <Button
+        android:id="@+id/button_Pro"
+        android:layout_width="114dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+
+        android:text="Pro"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:backgroundTint="#FF9800"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Search" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
