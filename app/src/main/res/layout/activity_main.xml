@@ -67,8 +67,8 @@
         android:layout_height="47dp"
         android:layout_marginTop="28dp"
 
-        android:fontFamily="@font/catamaran_black"
         android:text="Pro"
+        android:fontFamily="@font/catamaran_black"
         android:textAllCaps="true"
         android:textStyle="bold"
 
