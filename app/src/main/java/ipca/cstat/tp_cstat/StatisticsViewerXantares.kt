@@ -30,14 +30,14 @@ class StatisticsViewerXantares : AppCompatActivity() {
         val textlosses = findViewById<TextView>(R.id.player_losses)
         val textwl = findViewById<TextView>(R.id.player_wl)
 
-        textName.text = statistics[1].steamname
-        textKills.text = statistics[1].kills.toString()
-        textdeaths.text = statistics[1].deaths.toString()
+        textName.text = statistics[2].steamname
+        textKills.text = statistics[2].kills.toString()
+        textdeaths.text = statistics[2].deaths.toString()
         //textheadshots = statistics[numero].headshots
-        textkda.text = statistics[1].kda.toString()
-        textwins.text = statistics[1].wins.toString()
-        textlosses.text = statistics[1].losses.toString()
-        textwl.text = statistics[1].wlpercentage.toString()
+        textkda.text = statistics[2].kda.toString()
+        textwins.text = statistics[2].wins.toString()
+        textlosses.text = statistics[2].losses.toString()
+        textwl.text = statistics[2].wlpercentage.toString()
     }
 
 }
