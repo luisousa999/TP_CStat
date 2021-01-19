@@ -12,6 +12,7 @@ class Statistics {
     var wins                : Int ?= null
     var losses              : Int ?= null
     var wlpercentage        : Int ?= null
+    var numero              : Int ?= null
 
     constructor(){
 
@@ -26,7 +27,8 @@ class Statistics {
         kda: Int?,
         wins: Int?,
         losses: Int?,
-        wlpercentage: Int?
+        wlpercentage: Int?,
+        numero: Int?
     ){
         this.steamname = steamname
         this.steampicture = steampicture
@@ -37,6 +39,7 @@ class Statistics {
         this.wins = wins
         this.losses = losses
         this.wlpercentage = wlpercentage
+        this.numero = numero
     }
 
     companion object {
@@ -52,6 +55,7 @@ class Statistics {
             statistics.wins = jsonObject.getInt("wins.value")
             statistics.losses = jsonObject.getInt("losses.value")
             statistics.wlpercentage = jsonObject.getInt("wlpercentage.value")
+            statistics.numero = null
 
             return statistics
         }
