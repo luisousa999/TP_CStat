@@ -28,6 +28,15 @@
         <activity
             android:name=".Search"
             android:screenOrientation="landscape" />
+        <activity
+            android:name=".StatisticsViewerSimple"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".StatisticsViewerXantares"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".StatisticsViewerZywoo"
+            android:screenOrientation="landscape" />
 
         <meta-data
             android:name="preloaded_fonts"

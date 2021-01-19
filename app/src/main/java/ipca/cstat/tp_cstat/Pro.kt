@@ -13,22 +13,22 @@ class Pro : AppCompatActivity() {
 
         // Botões Dos Jogadores
         val simpleButton = findViewById<Button>(R.id.button_Simple)
-        val xantares = findViewById<Button>(R.id.button_Xantares)
+        val xantaresButton = findViewById<Button>(R.id.button_Xantares)
         val zywooButton = findViewById<Button>(R.id.button_Zywoo)
 
         // O que acontece ao clicar cada botão
         simpleButton.setOnClickListener {
-            val intent = Intent(this, News::class.java)
+            val intent = Intent(this, StatisticsViewerSimple::class.java)
             startActivity(intent)
         }
 
-        xantares.setOnClickListener {
-            val intent = Intent(this, Pro::class.java)
+        xantaresButton.setOnClickListener {
+            val intent = Intent(this, StatisticsViewerXantares::class.java)
             startActivity(intent)
         }
 
         zywooButton.setOnClickListener {
-            val intent = Intent(this, Search::class.java)
+            val intent = Intent(this, StatisticsViewerZywoo::class.java)
             startActivity(intent)
         }
     }
